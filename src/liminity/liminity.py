@@ -2,10 +2,18 @@
 import sys
 import time
 import random
+import importlib.resources as resources
 from luciditycli import Theme, Listener, print, print_buffer, actual_print
 
+def get_theme(path: str | None = None) -> Theme:
+    if path is not None:
+        return Theme(path)
+    # Get liminity/example.cfg inside the installed package
+    cfg_path = resources.files("liminity").joinpath("example.cfg")
+    return Theme(str(cfg_path))
+
 # Initialize theme + listener
-theme = Theme("example.cfg")
+theme = get_theme()
 listener = Listener()
 
 tasks = []

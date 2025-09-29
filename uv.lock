@@ -1,0 +1,23 @@
+version = 1
+revision = 3
+requires-python = ">=3.12"
+
+[[package]]
+name = "liminity"
+version = "0.1.0"
+source = { editable = "." }
+dependencies = [
+    { name = "luciditycli" },
+]
+
+[package.metadata]
+requires-dist = [{ name = "luciditycli", specifier = ">=0.1.3" }]
+
+[[package]]
+name = "luciditycli"
+version = "0.1.3"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/1f/85/763f1f66f3672965359e1da2af30fb772da23b39d996ab75974d02afc826/luciditycli-0.1.3.tar.gz", hash = "sha256:91956346b46709379f3a5250a539ebf2655020ec2ad5bbf399b52e8e2d417804", size = 16664, upload-time = "2025-09-26T17:59:56.845Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/2f/f1/a4165e833f3c643f71f8bb891b04135db3ecb02bf8b65ac58b4135518a0d/luciditycli-0.1.3-py3-none-any.whl", hash = "sha256:6a137bb9f5d50dbab7e1b6f18707932b3265d2a4fd24bc8e48eccde59857b072", size = 17459, upload-time = "2025-09-26T17:59:51.07Z" },
+]

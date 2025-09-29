@@ -8,6 +8,7 @@ A CLI todo list demoing the Lucidity Python module.
 (use pipx if your terminal says to)
 ## usage
 `pip install liminity`
+shell: `liminity`
 Uhhhh follow the instructions on screen
 ## features
 custom theme support with easy switching. LIST DATA IS NOT PERSISTENT. uhhhh otherwise just look at the main lucidity repo
